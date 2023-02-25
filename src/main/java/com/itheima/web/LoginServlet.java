@@ -1,17 +1,14 @@
 package com.itheima.web;
 import com.itheima.mapper.UserMapper;
 import com.itheima.pojo.User;
-import com.itheima.util.SqlSessionFactoryUtils;
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import com.itheima.util.SqlSessionFactoryUtil;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 
 @WebServlet("/loginServlet")
@@ -28,7 +25,7 @@ public class LoginServlet extends HttpServlet {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);*/
 
-        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtils.getSqlSessionFactory();
+        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtil.getSqlSessionFactory();
         //2.2 获取SqlSession对象
         SqlSession sqlSession = sqlSessionFactory.openSession();
         //2.3 获取Mapper
