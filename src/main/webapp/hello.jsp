@@ -16,7 +16,6 @@
     <%!
         void show(){};
         String name = "zhangsan";
-
     %>
 </body>
 </html>
