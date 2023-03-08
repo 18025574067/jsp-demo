@@ -7,8 +7,6 @@
     <h1>JSP, Hello world</h1>
     <%
         System.out.println("hello, jsp~");
-
-
     %>
 </body>
 </html>
