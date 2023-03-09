@@ -6,7 +6,7 @@
 <body>
     <h1>JSP, Hello world</h1>
     <%
-        System.out.println("hello, jsp~");
+        System.out.println("hello, jsp");
         int i = 3;
     %>
 
