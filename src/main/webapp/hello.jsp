@@ -16,13 +16,18 @@
 
     <h1>JSP, Hello world</h1>
     <%
-        // System.out.println("hello, jsp~~~");
+        System.out.println("hello, jsp~~~");
         int a = 3;
 
     %>
 
     <%="hello"%>
     <%=a%>
+
+    <%!
+        void show(){};
+        String name = "zhangsan";
+    %>
 
 
 </body>
