@@ -39,6 +39,12 @@
         <th>操作</th>
 
     </tr>
+
+    <%
+        for (int i = 0; i < brands.size(); i++) {
+            Brand brand = brands.get(i);
+            %>
+
     <tr align="center">
         <td>1</td>
         <td>三只松鼠</td>
@@ -48,6 +54,12 @@
         <td>启用</td>
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
+
+            <%
+        }
+    %>
+
+
 
 
 
