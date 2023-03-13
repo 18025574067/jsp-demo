@@ -49,27 +49,7 @@
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
 
-    <tr align="center">
-        <td>2</td>
-        <td>优衣库</td>
-        <td>优衣库</td>
-        <td>10</td>
-        <td>优衣库，服适人生</td>
-        <td>禁用</td>
 
-        <td><a href="#">修改</a> <a href="#">删除</a></td>
-    </tr>
-
-    <tr align="center">
-        <td>3</td>
-        <td>小米</td>
-        <td>小米科技有限公司</td>
-        <td>1000</td>
-        <td>为发烧而生</td>
-        <td>启用</td>
-
-        <td><a href="#">修改</a> <a href="#">删除</a></td>
-    </tr>
 
 
 </table>
