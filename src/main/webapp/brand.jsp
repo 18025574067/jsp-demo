@@ -46,12 +46,22 @@
             %>
 
     <tr align="center">
-        <td>1</td>
-        <td>三只松鼠</td>
-        <td>三只松鼠</td>
-        <td>100</td>
-        <td>三只松鼠，好吃不上火</td>
-        <td>启用</td>
+        <td><%=brand.getId()%></td>
+        <td><%=brand.getBrandName()%></td>
+        <td><%=brand.getCompanyName()%></td>
+        <td><%=brand.getOrdered()%></td>
+        <td><%=brand.getDescription()%></td>
+        <%
+            if (brand.getStatus() == 1){
+                // 启用
+                <%="启用"%>
+            }else {
+                // 禁用
+                <%="禁用"%>
+            }
+        %>
+
+        <td><%=brand.getStatus()%></td>
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
 
