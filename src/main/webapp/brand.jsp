@@ -50,6 +50,7 @@
         <td><%=brand.getCompanyName()%></td>
         <td><%=brand.getOrdered()%></td>
         <td><%=brand.getDescription()%></td>
+
         <%
             if (brand.getStatus() == 1){
                 // 显示启用
@@ -63,6 +64,7 @@
         <%
             }
         %>
+
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
             <%
