@@ -37,7 +37,6 @@
         <th>品牌介绍</th>
         <th>状态</th>
         <th>操作</th>
-
     </tr>
 
     <%
@@ -53,26 +52,22 @@
         <td><%=brand.getDescription()%></td>
         <%
             if (brand.getStatus() == 1){
-                // 启用
-                <td><%="启用"%></td>
+                // 显示启用
+        %>
+            <td><%="启用"%></td>
+        <%
             }else {
-                // 禁用
-                <td><%="禁用"%></td>
+                // 显示禁用
+        %>
+            <td><%="禁用"%></td>
+        <%
             }
         %>
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
-
             <%
         }
     %>
-
-
-
-
-
-
 </table>
-
 </body>
 </html>
