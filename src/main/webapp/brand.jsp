@@ -54,14 +54,12 @@
         <%
             if (brand.getStatus() == 1){
                 // 启用
-                <%="启用"%>
+                <td><%="启用"%></td>
             }else {
                 // 禁用
-                <%="禁用"%>
+                <td><%="禁用"%></td>
             }
         %>
-
-        <td><%=brand.getStatus()%></td>
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
 
