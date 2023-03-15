@@ -4,6 +4,8 @@
     <title>Title</title>
 </head>
 <body>
+
     ${brands}
+
 </body>
 </html>

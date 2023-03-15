@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/Demo1")
+@WebServlet("/demo1")
 public class ServletDemo1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,12 +24,12 @@ public class ServletDemo1 extends HttpServlet {
         // 2. 存储到request域中
         request.setAttribute("brands", brands);
 
-        // 3. 转发到 el-demo.jsp
+        // 3. 转发到el-demo.jsp
         request.getRequestDispatcher("/el-demo.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        this.doGet(request, response);
     }
 }
