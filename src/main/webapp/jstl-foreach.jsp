@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,23 +23,28 @@
 
     </tr>
 
-    <c: forEach item="${brands}" var="brand">
-
-
-    </c:forEach>
-
-
-
-
+    <c:forEach items="${brands}" var="brand" varStatus="status">
     <tr align="center">
-        <td>1</td>
-        <td>三只松鼠</td>
-        <td>三只松鼠</td>
-        <td>100</td>
-        <td>三只松鼠，好吃不上火</td>
-        <td>启用</td>
+        <%-- <td>${brand.id}</td> --%>
+        <%-- <td>${status.index}</td> --%>
+        <td>${status.count}</td>
+        <td>${brand.brandName}</td>
+        <td>${brand.companyName}</td>
+        <td>${brand.ordered}</td>
+        <td>${brand.description}</td>
+
+        <c:if test="${brand.status == 1}">
+         <td>启用</td>
+        </c:if>
+
+        <c:if test="${brand.status != 1}">
+         <td>禁用</td>
+        </c:if>
+
         <td><a href="#">修改</a> <a href="#">删除</a></td>
     </tr>
+
+    </c:forEach>
 
 </table>
 
