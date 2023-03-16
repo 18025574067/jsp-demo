@@ -23,9 +23,11 @@ public class ServletDemo1 extends HttpServlet {
 
         // 2. 存储到request域中
         request.setAttribute("brands", brands);
+        request.setAttribute("status", 0);
 
         // 3. 转发到el-demo.jsp
-        request.getRequestDispatcher("/el-demo.jsp").forward(request, response);
+//        request.getRequestDispatcher("/el-demo.jsp").forward(request, response);
+        request.getRequestDispatcher("/jstl-if.jsp").forward(request, response);
     }
 
     @Override
